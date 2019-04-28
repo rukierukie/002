@@ -1,0 +1,10 @@
+function onFormSubmit(e) {
+
+  MailApp.sendEmail("cymbalz@naver.com, emiru@hanmail.net", "새로운 사용요청이 도착하였습니다.", "신청자: " + e.values[1] +  
+                    "\n사용용도: " + e.values[3]);
+
+    MailApp.sendEmail(e.values[2], "귀하의 사용신청이 접수되었습니다.", e.values[1] + "님의 사용신청이 접수되었습니다. \n\n이 메일은 시스템에서 자동발송되는 메일입니다.");
+
+}
+
+
